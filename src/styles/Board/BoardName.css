@@ -1,0 +1,43 @@
+.changeBoardName {
+  display: inline-block;
+}
+.boardName {
+  height: 40px;
+
+  margin-bottom: 20px;
+}
+.boardName .visible {
+  position: absolute;
+  transform: translate(0px, -41px);
+}
+
+.changeBoardName > .boardName input {
+  color: #fbfdfe;
+  background-color: #3d99ce;
+}
+
+.hiddenBoardName {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+}
+.changeBoardName input {
+  padding: 0 16px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+
+  height: 40px;
+
+  border-radius: 3px;
+  transition: none;
+}
+.changeBoardName input:focus {
+  padding: 0 16px;
+
+  transition: none;
+
+  color: #2c3e5d;
+  background-color: #ebebeb;
+}

@@ -1,0 +1,120 @@
+
+.blackBG {
+  position: absolute;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.menuCreateBoard {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+}
+.menuCreateBoard__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+
+  position: absolute;
+  z-index: 2;
+
+  left: calc(50% - 150px);
+  top: 50%;
+}
+
+.menuCreateBoard__inner input {
+  height: 28px;
+  width: 185px;
+
+  border-radius: 5px;
+
+  padding: 0 35px 0 8px;
+  margin: 20px 0 0 10px;
+
+  background-color: transparent;
+
+  color: #fff !important;
+}
+.menuCreateBoard__inner input::placeholder {
+  color: rgba(255, 255, 255, 0.664);
+}
+.menuCreateBoard__inner input:focus {
+  padding: 0 35px 0 8px;
+
+  font-size: 16px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+.menuCreateBoard__inner button:nth-child(2) {
+  width: 105px;
+  height: 32px;
+
+  grid-area: 2 / 1 / 2 / 1;
+
+  justify-self: start;
+
+  border-radius: 5px;
+
+  background-color: #f4f5f7;
+
+  font-size: 14px;
+  color: #a5adba;
+
+  cursor: pointer;
+
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.menuCreateBoard__inner button.activeCreate {
+  color: #fff;
+
+  background-color: rgb(0, 121, 191);
+}
+
+.menuCreateBoard__inner button:nth-child(3) {
+  position: absolute;
+
+  transform: translateX(266px) translateY(7px);
+
+  background-color: transparent;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+.settingsBoard {
+  width: 296px;
+  height: 96px;
+
+  background-color: rgb(0, 121, 191);
+
+  border-radius: 5px;
+}
+
+/* @media (max-width: 862px) {
+  .blackBG {
+    z-index: 2;
+  }
+  .menuCreateBoard__inner {
+    transform: translateX(225px);
+  }
+}
+@media (max-width: 670px) {
+  .menuCreateBoard__inner {
+    transform: translateX(199px);
+  }
+}
+@media (max-width: 528px) {
+  .menuCreateBoard__inner {
+    transform: translateX(65px);
+  }
+}
+@media (max-width: 388px) {
+  .menuCreateBoard__inner {
+    transform: translateX(5px);
+  }
+} */
